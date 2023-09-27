@@ -10,25 +10,18 @@
             let arrProduit = dataProduit.split('|');
             let index;
             
+            
             switch (arrProduit[0]) {
                 case 'livres':
-                    index = arrProduit[1]
-                    console.log(index)
-                    let kife = new Livre(produits.livres[index]);
+                    index = arrProduit[1];
+                    new Livre(elsProduits[i], index) ;
+                    
                     break;
-                    case 'jeux':
+                case 'jeux':
                         index = arrProduit[1]
-                        console.log(index)
                         
                     break;    
-            
-                default:
-                    break;
             }
             
         }
-        // console.log(elsProduits.dataset.jsProduit)
-        
-        
-        // console.log(valueProduit)
     });
